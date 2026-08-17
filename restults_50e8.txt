@@ -1,0 +1,41 @@
+python3 th16_validator.py --limit 5000000000 --start 40 --check-known
+============================================================
+TH16 Validator — Suffisance des orbites SG isolées
+============================================================
+n dans [40, 5000000000]
+Génération SG jusqu'à 5000000000
+
+Génération des orbites SG…
+  SG(11) : 2,520,147 nombres
+  SG(23) : 2,519,061 nombres
+  SG(29) : 2,517,892 nombres
+  Temps génération : 5973.98 s
+
+
+=== Contrôle des exceptions documentées ===
+  SG(11) — exceptions documentées : [340]
+           exceptions trouvées   : [4, 10, 12, 132]
+           plus des exceptions  : [340] (couvertes avec les SG disponibles)
+  SG(23) — exceptions documentées : [40, 100]
+           exceptions trouvées   : [4, 6, 10, 12, 16, 22, 24]
+           plus des exceptions  : [40, 100] (couvertes avec les SG disponibles)
+  SG(29) — exceptions documentées : [40, 250]
+           exceptions trouvées   : [6, 10, 12, 16, 18, 22, 28, 30, 78]
+           plus des exceptions  : [40, 250] (couvertes avec les SG disponibles)
+=== Recherche des exceptions ===
+
+SG(11) — classes [0, 4, 10, 12, 18, 22, 24, 28]
+  Exceptions trouvées : [132]
+  Borne observée B_11 = 132
+  Temps : 33295.24 s
+  
+  
+
+Répartition des nombres premiersLa quantité de nombres premiers diminue en proportion à mesure que les nombres augmentent.
+Jusqu'à 10, il y a 4 nombres premiers (40 %).
+Jusqu'à 1 000, il y a 168 nombres premiers (16,8 %).
+Jusqu'à 1 000 000, il y a 78 498 nombres premiers (7,8 %).
+Jusqu'à 1 000 000 000, il y a 50 847 534 nombres premiers (5,1 %).
+Jusqu'à 10 000 000 000, le pourcentage tombe à 4,6 % de l'ensemble des entiers.
+
+  Détails clésValeur exacte (\(\pi(10^{10})\)) : 455 052 511 Densité : Environ 4,55 % des nombres dans cette tranche sont premiers.

@@ -1,0 +1,50 @@
+python3 th16_validator.py --limit 500000000 --start 40 --check-known
+============================================================
+TH16 Validator — Suffisance des orbites SG isolées
+============================================================
+n dans [40, 500000000]
+Génération SG jusqu'à 500000000
+
+Génération des orbites SG…
+  SG(11) : 318,613 nombres
+  SG(23) : 318,519 nombres
+  SG(29) : 318,306 nombres
+  Temps génération : 372.43 s
+
+
+=== Contrôle des exceptions documentées ===
+  SG(11) — exceptions documentées : [340]
+           exceptions trouvées   : [4, 10, 12, 132]
+           plus des exceptions  : [340] (couvertes avec les SG disponibles)
+  SG(23) — exceptions documentées : [40, 100]
+           exceptions trouvées   : [4, 6, 10, 12, 16, 22, 24]
+           plus des exceptions  : [40, 100] (couvertes avec les SG disponibles)
+  SG(29) — exceptions documentées : [40, 250]
+           exceptions trouvées   : [6, 10, 12, 16, 18, 22, 28, 30, 78]
+           plus des exceptions  : [40, 250] (couvertes avec les SG disponibles)
+=== Recherche des exceptions ===
+
+SG(11) — classes [0, 4, 10, 12, 18, 22, 24, 28]
+  Exceptions trouvées : [132]
+  Borne observée B_11 = 132
+  Temps : 1805.48 s
+
+SG(23) — classes [0, 4, 6, 10, 12, 16, 22, 24]
+  Exceptions trouvées : aucune
+  Aucune exception → B_23 ≤ 40
+  Temps : 1816.70 s
+
+SG(29) — classes [0, 6, 10, 12, 16, 18, 22, 28]
+  Exceptions trouvées : [78]
+  Borne observée B_29 = 78
+  Temps : 1814.97 s
+
+============================================================
+RÉSUMÉ
+============================================================
+  SG(11) : 1 exception(s), max = 132
+  SG(23) : 0 exception
+  SG(29) : 1 exception(s), max = 78
+
+Borne universelle observée sur cet intervalle : 132
+Temps total : 5809.72 s
